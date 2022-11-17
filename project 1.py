@@ -3,7 +3,7 @@
 # W3 Schools
 # main_side.py
 #  MR. COZORT help with the behavior change of the big red cubes 
-# My friend Mathew 
+# My friend Mathew
 
 ########## GAME RULES ############
 # jump off platforms and collect cubes  

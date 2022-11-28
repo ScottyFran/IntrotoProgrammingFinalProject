@@ -24,7 +24,13 @@ from pygame.sprite import Sprite
 import random
 from random import randint
 
+import os
+
 vec = pg.math.Vector2
+
+#Set Up Asset Folders
+game_folder = os.path.dirname(__file__)
+img_folder = os.path.join(game_folder, 'images')
 
 # game settings 
 WIDTH = 1000
@@ -58,8 +64,9 @@ def colorbyte():
 class Player(Sprite):
     def __init__(self):
         Sprite.__init__(self)
-        self.image = pg.Surface((40, 40))
-        self.image.fill(GREEN)
+        #self.image = pg.Surface((40, 40))
+        #self.image.fill(GREEN)
+        self.image = pg.image.load(os.path.join(img_folder, 'Video Game Character.png')).convert()
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH/2, HEIGHT/2)
         self.pos = vec(WIDTH/2, HEIGHT/2)

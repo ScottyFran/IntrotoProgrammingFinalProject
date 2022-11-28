@@ -2,13 +2,19 @@
 # content from kids can code: http://kidscancode.org/blog/
 # W3 Schools
 # main_side.py
-#  MR. COZORT help with the behavior change of the big red cubes 
+#  MR. COZORT helped with the behavior change of the big red cubes 
 # My friend Mathew
 
 ########## GAME RULES ############
 # jump off platforms and collect cubes  
 # collect 20 cubes to win 
 # When you win, game closes and prints you win in terminal 
+
+##### GOALS GOALS GOALS #####
+# Create Character Image 
+# Create Background 
+# Import Sound When Collecting Coins
+
 
 
 # import libraries and modules
@@ -108,7 +114,7 @@ class Platform(Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
-# creates the general mob class and makes them bouce off the walls 
+# creates the general mob class 
 class Mob(Sprite):
    def __init__(self, x, y, w, h, color, typeof):
         Sprite.__init__(self)

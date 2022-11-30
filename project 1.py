@@ -43,7 +43,7 @@ PLAYER_FRIC = 2.0
 SCORE = 0
 
 # define colors
-WHITE = (255, 255, 255)
+WHITE = (255,255,255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
@@ -67,6 +67,7 @@ class Player(Sprite):
         #self.image = pg.Surface((40, 40))
         #self.image.fill(GREEN)
         self.image = pg.image.load(os.path.join(img_folder, 'Video Game Character.png')).convert()
+        #self.image.set_colorkey(GREEN)
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH/2, HEIGHT/2)
         self.pos = vec(WIDTH/2, HEIGHT/2)

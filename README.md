@@ -1,10 +1,10 @@
 # IntrotoProgrammingFinalProject
 
 # The Collector:
-Using different classes to differentiate loot and mobs.
+Using different classes to differentiate player and mobs.
 
 # Description
-Collect the amount of loot to get to the next level and avoid enemies 
+Collect the amount of loot to win!
 
 Getting Started
 
@@ -45,6 +45,7 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 # Acknowledgments
 Inspiration, code snippets, etc.
 
+main_side.py
 w3Schools
 PyGame
 

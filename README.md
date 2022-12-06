@@ -6,12 +6,11 @@ Using different classes to differentiate player and mobs.
 # Description
 Collect the amount of loot to win!
 
-Getting Started
 
 # Dependencies
 Python 
 Pygame
-
+Image File 
 
 # Installing
 How/where to download your program
@@ -23,10 +22,7 @@ Step-by-step bullets
 code blocks for commands
 
 # Help
-Any advise for common problems or issues.
-
-command to run if program contains helper info
-Authors
+When game ends, run the python file again.
 
 # Contributors names and contact info
 
@@ -45,6 +41,7 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 # Acknowledgments
 Inspiration, code snippets, etc.
 
+Mr. Cozort 
 main_side.py
 w3Schools
 PyGame

@@ -60,14 +60,19 @@ def draw_text(text, size, color, x, y):
 def colorbyte():
     return random.randint(0,255)
 
+
+
+
+
 # Creates player sprite  which defines (color) and (size)
 class Player(Sprite):
     def __init__(self):
         Sprite.__init__(self)
         #self.image = pg.Surface((40, 40))
         #self.image.fill(GREEN)
+        # Creates mario by pullinf file from an outside source and adding it to player sprite
         self.image = pg.image.load(os.path.join(img_folder, 'Video Game Character.png')).convert()
-        #self.image.set_colorkey(GREEN)
+        #dself.image.set_colorkey(GREEN)
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH/2, HEIGHT/2)
         self.pos = vec(WIDTH/2, HEIGHT/2)
@@ -273,6 +278,10 @@ while running:
     ############ Draw ############
     # draw the background screen
     screen.fill(BLACK)
+
+    # Background
+    screen.blit(background, (BLACK))
+    background = pg.image.load(os.path.join(img_folder, 'Background.jpg')).convert()
     # draw text
     draw_text("POINTS: " + str(SCORE), 22, WHITE, WIDTH / 2, HEIGHT / 24)
 

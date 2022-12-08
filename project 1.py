@@ -48,6 +48,13 @@ BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
+
+#Images 
+# Background
+background = pg.image.load(os.path.join(img_folder, 'Background.jpg')).convert()
+background_rect = background.get_rect()
+
+
 # Draws the text shown on screen (Points)
 def draw_text(text, size, color, x, y):
         font_name = pg.font.match_font('arial')
@@ -208,7 +215,9 @@ pg.mixer.init()
 screen = pg.display.set_mode((WIDTH, HEIGHT))
 pg.display.set_caption("Scotty Francis Game")
 clock = pg.time.Clock()
-  
+
+#background_image = pg.image.load('Background.jpg').convert()
+
 # create groups (Platforms, sprite groups, and mobs)
 all_sprites = pg.sprite.Group()
 all_plats = pg.sprite.Group()
@@ -279,10 +288,7 @@ while running:
     # draw the background screen
     screen.fill(BLACK)
 
-    # Background
-    screen.blit(background, (BLACK))
-    background = pg.image.load(os.path.join(img_folder, 'Background.jpg')).convert()
-    # draw text
+    
     draw_text("POINTS: " + str(SCORE), 22, WHITE, WIDTH / 2, HEIGHT / 24)
 
     # draw all sprites

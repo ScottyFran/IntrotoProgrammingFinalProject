@@ -1,4 +1,5 @@
 ####### SOURCES ##########
+# SCOTTY FRANCIS 
 # content from kids can code: http://kidscancode.org/blog/
 # W3 Schools
 # main_side.py
@@ -128,7 +129,7 @@ class Platform(Sprite):
     def __init__(self, x, y, w, h):
         Sprite.__init__(self)
         self.image = pg.Surface((w, h))
-        self.image.fill(GREEN)
+        self.image.fill(BLUE)
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -231,6 +232,7 @@ player = Player()
 plat = Platform(0, 580, 1000, 90)
 plat2 = Platform(200, 400, 100, 35)
 plat3 = Platform(700, 400, 100, 35)
+plat4 = Platform(450, 250, 100, 35)
 
 # Spawns in amount of "REGULAR" mobs + defines size and random color
 for i in range(60):
@@ -249,13 +251,13 @@ for i in range(5):
 
 # add player to all sprites group
 all_sprites.add(player)
-all_plats.add(plat, plat2, plat3)
+all_plats.add(plat, plat2, plat3, plat4)
 
 # add platform to all sprites group
 all_sprites.add(plat)
 all_sprites.add(plat2)
 all_sprites.add(plat3)
-
+all_sprites.add(plat4)
 
 
 
@@ -301,5 +303,5 @@ while running:
     pg.display.flip()
     # If points hit 20, game closes and prints you win in terminal. 
     if SCORE == 20:
-        print ("you win !!!!!")
+        print ("you win !!!!! run python file to play again" )
         pg.quit()

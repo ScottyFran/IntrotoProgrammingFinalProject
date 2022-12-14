@@ -4,7 +4,7 @@
 Using different classes to differentiate player and mobs.
 
 # Description
-Collect the amount of loot to win!
+Collect the amount of loot to win!!!
 
 
 # Dependencies

@@ -5,7 +5,12 @@
 # main_side.py
 # https://www.freepik.com/
 # https://freemusicarchive.org/search/?quicksearch=Super+Mario
-#Microsoft Paint 
+# Microsoft Paint 
+# https://www.youtube.com/watch?v=dGwmmBBMlKs&t=33s
+# https://www.youtube.com/watch?v=iIb_xOs2a_E&t=112s
+# https://www.youtube.com/watch?v=dGwmmBBMlKs&t=41s
+# Charlie 
+# https://www.youtube.com/watch?v=2BikxsbkuIU&t=277s
 
 ########## GAME RULES ############
 # jump off platforms and collect cubes  
@@ -13,10 +18,7 @@
 
 
 ##### GOALS GOALS GOALS #####
-# Create Character Image (Complete)
-# Create Background (Complete)
-# Import Soundtrack for the game (Complete)
-
+# Finished!!
 
 #Import Settings File 
 from settings import *
@@ -46,9 +48,8 @@ def colorbyte():
 class Player(Sprite):
     def __init__(self):
         Sprite.__init__(self)
-        #self.image = pg.Surface((40, 40))
-        #self.image.fill(GREEN)
-        # Creates mario by pullinf file from an outside source and adding it to player sprite
+
+        # Creates mario by pulling file from an outside source and adding it to player sprite
         self.image = pg.image.load(os.path.join(img_folder, 'supermario.png')).convert()
         self.image.set_colorkey(WHITE)
         self.rect = self.image.get_rect()
@@ -87,11 +88,8 @@ class Player(Sprite):
         self.controls()
         # friction
         self.acc.x += self.vel.x * -0.1
-        # self.acc.y += self.vel.y * -0.1
         self.vel += self.acc
         self.pos += self.vel + 0.5 * self.acc
-        # self.rect.x += self.xvel
-        # self.rect.y += self.yvel
         self.rect.midbottom = self.pos
         self.inbounds()
         self.rect.midbottom = self.pos
@@ -129,8 +127,7 @@ class Mob(Sprite):
                 self.hity = hits[0].rect.centery
                 xdiff = abs(self.rect.centerx - hits[0].rect.centerx)
                 ydiff = abs(self.rect.centery - hits[0].rect.centery)
-                # print("xdif " + str(xdiff))
-                # print("ydif " + str(ydiff))
+                
                 if hits[0].rect.centerx > self.rect.centerx and xdiff > ydiff:
                     self.speedx *= -1
                 if hits[0].rect.centerx < self.rect.centerx and xdiff > ydiff:

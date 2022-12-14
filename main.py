@@ -3,58 +3,28 @@
 # content from kids can code: http://kidscancode.org/blog/
 # W3 Schools
 # main_side.py
-# My friend Mathew
+# https://www.freepik.com/
 # https://freemusicarchive.org/search/?quicksearch=Super+Mario
+#Microsoft Paint 
 
 ########## GAME RULES ############
 # jump off platforms and collect cubes  
 # collect 20 cubes to win 
-# When you win, game closes and prints you win in terminal 
+
 
 ##### GOALS GOALS GOALS #####
 # Create Character Image (Complete)
 # Create Background (Complete)
-# Import Soundtrack for the game 
+# Import Soundtrack for the game (Complete)
 
 
-
-# import libraries and modules
-# from platform import platform
-import pygame as pg
-from pygame.sprite import Sprite
-import random
-from random import randint
-# Import os is used for images
-import os
-# Mixer Library is used for music 
-from pygame import mixer
-vec = pg.math.Vector2
+#Import Settings File 
+from settings import *
 
 
-#Set Up Asset Folders for images 
+##Set Up Asset Folders for images 
 game_folder = os.path.dirname(__file__)
 img_folder = os.path.join(game_folder, 'images')
-
-
-# game settings 
-WIDTH = 1000
-HEIGHT = 600
-FPS = 30
-
-# player settings/ sets score at 0 to start
-PLAYER_GRAV = 1.0
-PLAYER_FRIC = 2.0
-SCORE = 0
-
-# define colors
-WHITE = (255,255,255)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
-
- 
-
 
 
 # Draws the text shown on screen (Points)
@@ -68,7 +38,6 @@ def draw_text(text, size, color, x, y):
 
 def colorbyte():
     return random.randint(0,255)
-
 
 
 

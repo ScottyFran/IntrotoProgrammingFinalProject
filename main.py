@@ -24,14 +24,17 @@ import pygame as pg
 from pygame.sprite import Sprite
 import random
 from random import randint
+# Import os is used for images
 import os
+# Mixer Library is used for music 
 from pygame import mixer
 vec = pg.math.Vector2
 
 
-#Set Up Asset Folders
+#Set Up Asset Folders for images 
 game_folder = os.path.dirname(__file__)
 img_folder = os.path.join(game_folder, 'images')
+
 
 # game settings 
 WIDTH = 1000
@@ -220,7 +223,6 @@ background = pg.image.load(os.path.join(img_folder, 'Background.jpg')).convert()
 background_rect = background.get_rect()
 
 
-#background_image = pg.image.load('Background.jpg').convert()
 
 # create groups (Platforms, sprite groups, and mobs)
 all_sprites = pg.sprite.Group()
@@ -235,7 +237,7 @@ plat3 = Platform(700, 400, 100, 35)
 plat4 = Platform(450, 250, 100, 35)
 
 # Spawns in amount of "REGULAR" mobs + defines size and random color
-for i in range(60):
+for i in range(40):
     m = Mob(randint(-1000,WIDTH), randint(0,HEIGHT), 25, 25, (colorbyte(),colorbyte(),colorbyte()), "regular")
     all_sprites.add(m)
     mobs.add(m)
@@ -261,7 +263,9 @@ all_sprites.add(plat4)
 
 
 
-
+#Background Sound 
+music = pg.mixer.music.load('SM.mp3')
+pg.mixer.music.play(-1)
 
 # Game loop
 running = True
@@ -289,23 +293,26 @@ while running:
     # update all sprites
     all_sprites.update()
 
+
+
     ############ Draw ############
     # draw the background screen
     screen.fill(BLACK)
     screen.blit(background, (0,0))
 
-    #Background Sound 
-    mixer.music.load('SuperMario.mp3')
-    mixer.music.play(-1)
-    
-    draw_text("POINTS: " + str(SCORE), 22, WHITE, WIDTH / 2, HEIGHT / 24)
+
 
     # draw all sprites
     all_sprites.draw(screen)
+    # Draws points on screen
+    draw_text("POINTS: " + str(SCORE), 22, WHITE, WIDTH / 2, HEIGHT / 24)
 
-    # buffer - after drawing everything, flip display
+    
+    
+    # If points hit 20, you win  
+    if SCORE >= 20:
+        draw_text ("you win !!!!!", 100, RED, WIDTH/2, HEIGHT/4 )
+    
+    # buffer - after drawing everything, flip display   
     pg.display.flip()
-    # If points hit 20, game closes and prints you win in terminal. 
-    if SCORE == 20:
-        print ("you win !!!!! run python file to play again" )
-        pg.quit()
+pg.quit()

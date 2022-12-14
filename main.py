@@ -3,8 +3,8 @@
 # content from kids can code: http://kidscancode.org/blog/
 # W3 Schools
 # main_side.py
-#  MR. COZORT helped with the behavior change of the big red cubes 
 # My friend Mathew
+# https://freemusicarchive.org/search/?quicksearch=Super+Mario
 
 ########## GAME RULES ############
 # jump off platforms and collect cubes  
@@ -12,9 +12,9 @@
 # When you win, game closes and prints you win in terminal 
 
 ##### GOALS GOALS GOALS #####
-# Create Character Image 
-# Create Background 
-# Import Sound When Collecting Coins
+# Create Character Image (Complete)
+# Create Background (Complete)
+# Import Soundtrack for the game 
 
 
 
@@ -24,10 +24,10 @@ import pygame as pg
 from pygame.sprite import Sprite
 import random
 from random import randint
-
 import os
-
+from pygame import mixer
 vec = pg.math.Vector2
+
 
 #Set Up Asset Folders
 game_folder = os.path.dirname(__file__)
@@ -129,7 +129,7 @@ class Platform(Sprite):
     def __init__(self, x, y, w, h):
         Sprite.__init__(self)
         self.image = pg.Surface((w, h))
-        self.image.fill(BLUE)
+        self.image.fill(GREEN)
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -293,6 +293,10 @@ while running:
     # draw the background screen
     screen.fill(BLACK)
     screen.blit(background, (0,0))
+
+    #Background Sound 
+    mixer.music.load('SuperMario.mp3')
+    mixer.music.play(-1)
     
     draw_text("POINTS: " + str(SCORE), 22, WHITE, WIDTH / 2, HEIGHT / 24)
 

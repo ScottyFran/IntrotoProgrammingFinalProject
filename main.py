@@ -60,14 +60,13 @@ class Player(Sprite):
 # makes controls for the player 
     def controls(self):
         keys = pg.key.get_pressed()
-        # if keys[pg.K_w]:
-        #     self.acc.y = -5
+        
         if keys[pg.K_a]:
             self.acc.x = -5
-        # if keys[pg.K_s]:
-        #     self.acc.y = 5
+     
         if keys[pg.K_d]:
             self.acc.x = 5
+            
 #Allows player to be able to jump off plats
     def jump(self):
         self.rect.x += 1

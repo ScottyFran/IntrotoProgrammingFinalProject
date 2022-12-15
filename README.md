@@ -1,28 +1,34 @@
-# IntrotoProgrammingFinalProject
+# IntrotoProgrammingFinalProject (Main.py)
 
 # The Collector:
 Using different classes to differentiate player and mobs.
 
 # Description
-Collect the amount of loot to win!!!
+- Collect 20 blocks and earn points.
+- When 20 points are collected you win!!
 
 
 # Dependencies
 Python 
 Pygame
-Image File 
+Image Module 
+Settings Module 
 
 # Installing
 How/where to download your program
 Any modifications needed to be made to files/folders
 Executing program
+- Download main.py off GitHub 
+- Make sure images are downloaded as well (key part to functionality of game)
+- Audio file needs to be downloaded as well (SM.mp3)
+- setting.py needs to be downloaded (includes setting for game to run)
 
---How to run the program
-Step-by-step bullets
-code blocks for commands
+# How to run the program
+- Once all programs are downloaded, press the "run code button"
+- Onne the game ends, close it and run the code again
 
 # Help
-When game ends, run the python file again.
+When game ends, close program and run again within the python file
 
 # Contributors names and contact info
 
@@ -39,12 +45,17 @@ License
 This project is licensed under the [MIT] License - see the LICENSE.md file for details
 
 # Acknowledgments
-Inspiration, code snippets, etc.
-
-Mr. Cozort 
+content from kids can code: http://kidscancode.org/blog/
+W3 Schools
 main_side.py
-w3Schools
-PyGame
+https://www.freepik.com/
+https://freemusicarchive.org/search/?quicksearch=Super+Mario
+Microsoft Paint 
+https://www.youtube.com/watch?v=dGwmmBBMlKs&t=33s
+https://www.youtube.com/watch?v=iIb_xOs2a_E&t=112s
+https://www.youtube.com/watch?v=dGwmmBBMlKs&t=41s
+Charlie 
+https://www.youtube.com/watch?v=2BikxsbkuIU&t=277s
 
 
 

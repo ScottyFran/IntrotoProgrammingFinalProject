@@ -21,11 +21,11 @@ Executing program
 - Download main.py off GitHub 
 - Make sure images are downloaded as well (key part to functionality of game)
 - Audio file needs to be downloaded as well (SM.mp3)
-- setting.py needs to be downloaded (includes setting for game to run)
+- setting.py needs to be downloaded (includes settings for game to run)
 
 # How to run the program
 - Once all programs are downloaded, press the "run code button"
-- Onne the game ends, close it and run the code again
+- Once the game ends, close it and run the code again
 
 # Help
 When game ends, close program and run again within the python file

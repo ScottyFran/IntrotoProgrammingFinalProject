@@ -66,7 +66,7 @@ class Player(Sprite):
      
         if keys[pg.K_d]:
             self.acc.x = 5
-            
+
 #Allows player to be able to jump off plats
     def jump(self):
         self.rect.x += 1
@@ -164,7 +164,7 @@ class Mob(Sprite):
             self.rect.x += self.speedx
             if self.rect.right > WIDTH or self.rect.x < 0:
                 self.speedx *= -1
-                self.rect.y += 35
+                self.rect.y += 50
         else:
             if self.rect.right > WIDTH or self.rect.x < 0:
                 self.speedx *= -1

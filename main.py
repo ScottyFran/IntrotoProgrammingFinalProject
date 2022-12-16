@@ -152,7 +152,7 @@ class Mob(Sprite):
                 self.hity = hits[0].rect.centery
             
 
-# keeps player for going off the screen 
+# keeps player for going off the screen by checking if it touching the sides of screen
    def boundscheck(self):
         if not self.rect.x > 0 or not self.rect.x < WIDTH:
             self.speedx *=-1

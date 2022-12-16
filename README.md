@@ -46,16 +46,16 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 
 # Acknowledgments
 content from kids can code: http://kidscancode.org/blog/
-W3 Schools /
-main_side.py /
-https://www.freepik.com/ /
-https://freemusicarchive.org/search/?quicksearch=Super+Mario /
-Microsoft Paint 
-https://www.youtube.com/watch?v=dGwmmBBMlKs&t=33s /
-https://www.youtube.com/watch?v=iIb_xOs2a_E&t=112s /
-https://www.youtube.com/watch?v=dGwmmBBMlKs&t=41s /
-Charlie /
-https://www.youtube.com/watch?v=2BikxsbkuIU&t=277s /
+- W3 Schools 
+- main_side.py 
+- https://www.freepik.com/ 
+- https://freemusicarchive.org/search/?quicksearch=Super+Mario 
+- Microsoft Paint 
+- https://www.youtube.com/watch?v=dGwmmBBMlKs&t=33s 
+- https://www.youtube.com/watch?v=iIb_xOs2a_E&t=112s 
+- https://www.youtube.com/watch?v=dGwmmBBMlKs&t=41s 
+- Charlie 
+- https://www.youtube.com/watch?v=2BikxsbkuIU&t=277s 
 
 
 
